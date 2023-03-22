@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이은솔집</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+      h2 {
+        padding: 4rem 0;
+      }
+      label {
+        display: block;
+        padding: 1rem 0;
+      }
+      a {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>이은솔집</h2>
+    <ul>
+      <li><a href="/">메인페이지</a></li>
+      <li><a href="/sol">우리집</a></li>
+      <li><a href="/bum">범네집으로</a></li>
+    </ul>
+
+    <h2>이은솔의 Todo List</h2>
+    <form action="/add" method="post">
+      <label>오늘의 할일 : <input type="text" name="list" /></label>
+      <label>날짜 <input type="date" name="date" /></label>
+      <label>오늘 기분 <input type="text" name="happy" /></label>
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>
